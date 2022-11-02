@@ -1,0 +1,251 @@
+body{
+    min-height: 1050px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #141519;
+    color: hsl(217, 12%, 63%);
+    font-family: 'Overpass', sans-serif;
+}
+
+.container1{
+    display: flex;
+    flex-direction: column;
+    background: radial-gradient(circle at top, #313949 -50%, #171e28 50% 100%);
+    width: 420px;
+    height: 450px;
+    border-radius: 30px;
+    padding: 30px;
+    text-align: left;
+    align-items:flex-start;
+    
+}
+
+.container2 {
+    display: flex;
+    flex-direction: column;
+    background: radial-gradient(circle at top, #313949 -50%, #171e28 50% 100%);
+    width: 420px;
+    height: 450px;
+    border-radius: 30px;
+    padding: 30px;
+    text-align: center;
+    align-items:center;
+   display: none;
+    
+}
+
+
+
+.icon{
+    height: 36px;
+    width:36px;
+    border-radius: 50%;
+    background-color: hsl(213, 20%, 22%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+    transition: all .4s;
+}
+
+.star{
+    width:24px;
+    height: 24px;
+}
+
+
+/*First container text*/
+
+.title{
+    font-size: 2.2rem;
+    color:#fff;
+}
+
+.text1{
+    font-size: 1.1rem;
+    word-spacing: 2px;
+    line-height: 24px;
+    letter-spacing: 1px;
+}
+
+/*Ratings*/
+
+.ratings{
+    display: flex;
+    flex-direction: row;
+    
+}
+
+.rating{
+    border-radius: 50%;
+    width: 65px;
+    height: 65px;
+    border:none;
+    color:#fff;
+    border-radius: 50%;
+    background-color: hsl(213, 20%, 22%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin:10px;
+   font-size: 1.3rem;
+   font-weight: bold;
+}
+
+#btn{
+    background-color:  #fb7413;
+    border:none;
+    border-radius: 30px;
+    height: 60px;
+    width: 400px;
+    margin-top: 30px;
+    color:white;
+    letter-spacing: 2px;
+    font-size: 1.2rem;
+}
+
+/*Hover states*/
+
+#btn:hover{
+    background-color: white;
+    color:#fb7413;
+    transition: all .4s;
+}
+
+.rating:hover{
+    background-color: #959eac;
+    color: white;
+    transition: all .4s;
+}
+
+.rating:focus{
+    background-color: #fb7413;
+    color:#fff;
+    transition: all .4s;
+}
+
+
+
+
+/*Second container*/
+
+.thanksImg{
+    padding: 20px;
+    width: 180px;
+    height: 130px;
+}
+
+.ratingResult{
+    font-size: 1.3rem;
+   padding: 0.4rem;
+    color:#da6512;
+    background-color: hsl(213, 20%, 22%);
+    border-radius: 20px;
+     width: 270px;
+     margin-left: 75px;
+}
+
+
+.title2{
+    color:#fff;
+    font-size: 2rem;
+    margin-top: 30px;
+}
+
+.text2{
+    font-size: 1.1rem;
+    word-spacing: 1px;
+    padding-left: 1rem;
+}
+
+.text2::after{
+    content:'';
+    clear:both;
+    display:block;
+}
+
+
+
+/*Mobile*/
+
+@media(max-width:375px){
+
+    /*First container*/
+    .container1{
+        width: 280px;
+        height: 360px;
+        margin-left: 5px;
+    }
+
+    .icon{
+        height: 30px;
+        width:30px;
+    }
+
+    .star{
+        width:20px;
+    height: 20px;
+    }
+
+    .title{
+        font-size: 1.7rem;
+    }
+
+    .text1{
+        font-size: 0.9rem;
+        word-spacing: normal;
+        padding: 0;
+    }
+    
+    .rating{
+        width: 45px;
+    height: 45px;
+    margin:8px;
+    margin-right: 5px;
+    font-size: 1rem;
+  
+    
+    }
+
+    #btn{
+        height: 200px;
+    width: 280px;
+    margin-top:8px;
+    }
+
+    /*Second container*/
+    .container2{
+        width: 280px;
+        height: 320px;
+        margin-left: 5px;
+    }
+     
+    .thanksImg{
+        width: 130px;
+        height: 100px;
+    }
+    .ratingResult{
+        font-size: 1.1rem;
+   padding: 0.4rem;
+     width: 220px;
+     margin-left: 30px;
+    }
+
+    .title2{
+       
+        font-size: 1.5rem;
+        margin-top: 30px;
+    }
+    
+    .text2{
+        font-size: 1rem;
+         padding: 0;
+        padding-left:0;
+        padding-right: 0;
+    }
+}
+
+.attribution { font-size: 15px; text-align: center; padding: 20px; }
+.attribution a { color: hsl(228, 45%, 44%); }
